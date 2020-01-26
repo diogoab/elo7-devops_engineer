@@ -16,6 +16,8 @@ Depois que a infraestrutura é criada, é realizado o build e deploy da aplicaç
 
 Este projeto foi criado especificamente para ser executado pelo AWS Developer Tools (https://github.com/alysonfranklin/AwsDeveloperTools.git)
 
+Antes de começar, não esqueça de configurar seu usuário GIT no CodeCommit.
+[Configurando Git no CodeCommit](https://docs.aws.amazon.com/pt_br/codecommit/latest/userguide/setting-up-ssh-unixes.html "Configurando Git no CodeCommit")
 #### Passo a passo para execução
 ```
   $ git clone https://github.com/alysonfranklin/AwsDeveloperTools.git

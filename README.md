@@ -47,9 +47,16 @@ No final será exibido o DNS do LoadBalancer que você irá copiar e colar no na
 ##### Excluindo a infraestrutura criada pelo AWS Developer Tools
 
 Edite o arquivo **buildspec_terraform_plan.yml** e deixe-o conforme mostrado na imagem abaixo:
+![N|Solid](https://i.imgur.com/9A3p0Bc.png)
+Edite também o arquivo **buildspec_terraform_apply.yml** e deixe-o conforme mostrado na imagem abaixo: 
 ![N|Solid](https://i.imgur.com/EU4PINs.png)
 Após editar e salvar o arquivo, faça o commit/push e aguarde a infraestrutura ser excluída.
 Para visualizar o andamento da exclusão da infraestrutura, acesse o Pipeline criado no primeiro passo.
+
+Caso queira criar a infraestrutura novamente utilizando AWS DeveloperTools, copie o conteúdo do arquivo **buildspec.yml** para o arquivo **buildspec_terraform_apply.yml**.
+```
+$ cp -v buildspec.yml buildspec_terraform_apply.yml
+```
 
 OBS: Não esqueça de excluir os serviços AWS Developer Tools rodando **terraform destroy --auto-approve** diretamente na sua maquina local.
 #### Done!! =)
